@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrams Team Checker</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+</head>
+<body>
+    <h1>Intrams Team Checker</h1>
+<div>
+    <form>
+        <p>Are you done with your online registration? Answer ONLY with Yes or No (case sensitive)</p>
+        <input type="text" id="register" name="online registration">
+        
+<br>
+        <p>Do you have a medical certificate? Answer ONLY with Yes or No (case sensitive)</p>
+        <input type="text" id="certificate" name="medical certificate">
+<br>
+        <label for="grade level">What is your grade level?</label>
+        <select name="level" id="levels"><br>
+            <option value="7">Grade 7</option>
+            <option value="8">Grade 8</option>
+            <option value="9">Grade 9</option>
+            <option value="10">Grade 10</option>
+        </select>
+<br>
+        <label for="sections">What is your section?</label>
+        <select name="section" id="sections">
+            <option value="Emerald">Emerald</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Sapphire">Sapphire</option>
+            <option value="Topaz">Topaz</option>
+        </select>
+<br>
+    <button type="button" py-click="team_identifier">Submit</button>        
+    </form>
+</div>
+
+<div id="output"></div>
+<py-script src="main.py"></py-script>
+</body>
+</html>
