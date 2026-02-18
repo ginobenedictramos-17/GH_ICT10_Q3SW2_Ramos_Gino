@@ -3,22 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intrams Team Checker</title>
+    <title>OBMC Intramurals: Intrams Team Checker</title>
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
     <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <style>
+    body {
+        background-color: #598392;
+        color: #FFFFEA;
+        font-size: 28px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    ul {
+    list-style-type: none;
+    background-color: #758173;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #FFFFEA;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 0.2px;
+}
+
+    ul, li {
+    float: left;
+}    
+.container {
+    background-color: #878E88;
+    color: black;
+    text-align: center;
+    font-size: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+ a {
+    color: inherit;
+}
+.button {
+    width: 45px;
+    height: 45px;
+    border-radius: auto;
+}
+    </style>
 </head>
 <body>
+    <div>
+        <ul>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjUvQbhS8x9R3mRK37tdOL5Tl47qdvZtoWkw&s" width="70px" height="70px"></li>
+            <li>OBMC Intramurals: Team Checker</li>
+            <li><a href="http://127.0.0.1:5500/Project/index.html" target="_blank">Main Website</a></li>
+            <li><a href="http://127.0.0.1:5500/skills%20test/index.html" target="_blank">Account Creator</a></li>
+        </ul>
+    </div> <br>
     <h1>Intrams Team Checker</h1>
+    
 <div>
     <form>
         <p>Are you done with your online registration? Answer ONLY with Yes or No (case sensitive)</p>
+        <img src="https://i.pinimg.com/736x/53/5d/12/535d12a260e0dfabb55a7a1ed4e73f18.jpg" width="100px" height="100px">
         <input type="text" id="register" name="online registration">
         
 <br>
         <p>Do you have a medical certificate? Answer ONLY with Yes or No (case sensitive)</p>
+        <img src="https://seek-team-prod.s3.fr-par.scw.cloud/users/5f5f114da354c464861007.png" width="100px" height="100px">
         <input type="text" id="certificate" name="medical certificate">
 <br>
-        <label for="grade level">What is your grade level?</label>
+         <label for="grade level">What is your grade level?</label> 
         <select name="level" id="levels"><br>
             <option value="7">Grade 7</option>
             <option value="8">Grade 8</option>
@@ -38,7 +92,7 @@
     </form>
 </div>
 
-<div id="output"></div>
+<div id="output" class="container"></div>
 <py-script src="main.py"></py-script>
 </body>
 </html>
